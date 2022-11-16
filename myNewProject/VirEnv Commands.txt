@@ -1,0 +1,27 @@
+D:\VirEnv\sumo_test>cd Scripts
+
+D:\VirEnv\sumo_test\Scripts>activate
+
+(sumo_test) D:\VirEnv\sumo_test\Scripts>sumo.exe mynet.sumocfg
+Error: Could not open 'mynet.sumocfg'.
+Quitting (on error).
+
+(sumo_test) D:\VirEnv\sumo_test\Scripts>cd sumo_test
+The system cannot find the path specified.
+
+(sumo_test) D:\VirEnv\sumo_test\Scripts>cd sumo_testcd..
+The system cannot find the path specified.
+
+(sumo_test) D:\VirEnv\sumo_test\Scripts>cd sumo_test
+The system cannot find the path specified.
+
+(sumo_test) D:\VirEnv\sumo_test\Scripts>cd..
+
+(sumo_test) D:\VirEnv\sumo_test>cd Source
+
+(sumo_test) D:\VirEnv\sumo_test\Source>cd myNewProject
+
+(sumo_test) D:\VirEnv\sumo_test\Source\myNewProject>sumo.exe mynet.sumocfg
+Step #500.00 (11ms ~= 90.91*RT, ~636.36UPS, vehicles TOT 189 ACT 7 BUF 0)
+
+(sumo_test) D:\VirEnv\sumo_test\Source\myNewProject>

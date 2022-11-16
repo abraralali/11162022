@@ -1,0 +1,12 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+	<vType id="EastWest"/>
+	<vType id="WestEast"/>
+	<vType id="SouthNorth"/>
+	<vType id="NorthSouth"/>
+	
+	<flow id="EW" type="EastWest" from="-E1" to="E10" probability="0.1"/>
+	<flow id="WE" type="WestEast" from="-E10" to="E1" probability="0.1"/>
+	<flow id="NS" type="NorthSouth" from="-E6" to="-E5" probability="0.1"/>
+	<flow id="SN" type="SouthNorth" from="E5" to="E6" probability="0.1"/>
+	
+</routes>

@@ -1,0 +1,6 @@
+<additional>
+	<vType id="myType" vClass="pedestrian">
+		<param key="device.btreceiver.probability" value="1"/>
+		<param key="device.btsender.probability" value="1"/>
+	</vType>
+</additional>

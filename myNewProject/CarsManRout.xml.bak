@@ -1,0 +1,53 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+	<vType id="moving" maxSpeed="14.95" guiShape="passenger/sedan" jmIgnoreJunctionFoeProb="0" jmCrossingGap="10" jmIgnoreFoeProb="0">
+		<param key="has.PHEMlight.device" value="true"/>
+	</vType>
+	<!--<vType id="moving" maxSpeed="15" guiShape="passenger/sedan"/>-->
+	<vType id="parked" maxSpeed="14.95" guiShape="passenger/sedan"/>
+	<!--<vehicle id="parked1" type="parked" depart="1.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaA" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked2" type="parked" depart="2.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaA" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked3" type="parked" depart="3.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaA" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked4" type="parked" depart="4.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaA" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked5" type="parked" depart="5.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaB" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked6" type="parked" depart="6.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaB" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked7" type="parked" depart="7.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaB" duration="1500"/>
+    </vehicle>
+	<vehicle id="parked8" type="parked" depart="8.00" departLane="2">
+		<route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaB" duration="1500"/>
+    </vehicle>-->
+	<flow id="parkedb12" type="parked" number="6" from="-E0" to="-E0.51.46" departLane="2" begin="1" end="60">
+        <route edges="-E0.51 -E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaB" duration="3600"/>
+    </flow>
+	<flow id="parkeda11" type="parked" number="5" from="-E0.51" to="-E0.51.46" departLane="2" begin="60" end="120">
+        <route edges="-E0.51.49 -E0.51.46"/>
+		<stop parkingArea="ParkAreaA" duration="3600"/>
+    </flow>
+	
+	<flow id="movingFlow" type="moving" period="40" from="-E0" to="-E0.51.46" departLane="2" begin="120">
+        <route edges="-E0 -E0.57 -E0.51 -E0.51.49 -E0.51.46"/>
+    </flow>
+	
+	
+</routes>

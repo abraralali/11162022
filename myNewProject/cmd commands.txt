@@ -1,0 +1,30 @@
+C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\MyCodes\PedestrianSystem
+python C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py --help
+python C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n pedDetSys.net.xml -r pedDetSys.rou.xml -a pedDetSysAdditional.xml --pedestrians -l --binomial 100 --period 20 -v
+sumo –c quickstart.sumocfg
+
+
+E:\PedestrianSystem\PedestrianSystemSumo>python C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n mynet.net.xml -r mynetcars.rou.xml -a mynet.add.xml -L
+
+-L //weight edge probability by number of lanes
+
+python C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n mynet.net.xml -L -r mynetcars.rou.xml -a mynet.add.xml -p 5 --trip-attributes="departLane=\"best\""
+
+netconvert --node-files mynet.nod.xml --edge-files mynet.edg.xml -o mynet.net.xml --connection-files mynet.con.xml
+
+python randomTrips.py -n mynet.net.xml -r pedDetSys.rou.xml --pedestrians -l --binomial 10 --period 10 -v
+
+
+
+###intersections project:
+python C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n intersections.net.xml -r ped.rou.xml --pedestrians
+python C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n intersections.net.xml -r cars.rou.xml
+
+C:\Users\Alali\Desktop\myNewProject>C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n intersections.net.xml -r cars.rou.xml --period 2 --binomial 1
+calling C:\Program Files (x86)\Eclipse\Sumo\bin\duarouter -n intersections.net.xml -r trips.trips.xml --ignore-errors --begin 0 --end 3600 --no-step-log --no-warnings -o cars.rou.xml
+Success.
+
+C:\Users\Alali\Desktop\myNewProject>C:\Users\Alali\Downloads\sumo-win64-1.11.0\sumo-1.11.0\tools\randomTrips.py -n intersections.net.xml -r ped.rou.xml --pedestrians --period 5 --binomial 2
+calling C:\Program Files (x86)\Eclipse\Sumo\bin\duarouter -n intersections.net.xml -r trips.trips.xml --ignore-errors --begin 0 --end 3600 --no-step-log --no-warnings -o ped.rou.xml
+Success.
+

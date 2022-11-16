@@ -1,0 +1,28 @@
+<configuration>
+    <input>
+        <net-file value="intersections.net.xml"/>
+        <!--<route-files value="ped.rou.xml, cars.rou.xml"/>-->
+		<route-files value="ped.rou.xml, CarsManRout.rou.xml"/>
+		<random value="true"/>
+		<gui-settings-file value="setting2.xml"/>
+		<!--<pedestrian.striping.dawdling value="0"/>-->
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="100"/>
+    </time>
+	<communication>
+		<device.btsender.probability value="1"/>
+		<device.btreceiver.probability value="1"/>
+		<device.btreceiver.all-recognitions value="true"/>
+		<device.btreceiver.range value="100"/>
+		<person-device.btsender.probability value="1"/>
+		<person-device.btreceiver.probability value="1"/>
+	</communication>
+	<output>
+		<fcd-output value="output.xml"/>
+		<emission-output value="emmisions.xml"/>
+		<collision-output value="collision.xml"/>
+		<bt-output value="bluetooth.xml"/>
+	</output>
+</configuration>

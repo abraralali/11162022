@@ -1,0 +1,8 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+	<vType id="EastWest"</vType>
+	<vType id="NorthSouth"</vType>
+	
+	<flow id="EW" type="EastWest" period="10" from="-E1" to="E8" departLane="2"/>
+	<flow id="NS" type="NorthSouth" period="10" from="-E7" to="-E9" departLane="2"/>
+	
+</routes>
